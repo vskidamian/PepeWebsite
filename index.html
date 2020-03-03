@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.min.js"></script>
     <title>Radawa Cholewa Agroturystyka</title>
 </head>
 
@@ -43,9 +44,22 @@
             <img src="src/about.jpg" alt="Agroturystyka" />
         </div>
     </section>
+    <!-- Weather Widget -->
+    <div class="weather">
+        <a class="weatherwidget-io" href="https://forecast7.com/pl/50d1422d76/radawa/" data-label_1="RADAWA" data-font="Roboto" data-mode="Current" data-days="3">RADAWA</a>
+    </div>
     <!-- Background eclipse -->
     <img class="wheat" src="src/wheat1.png" alt="Wheat" />
     <img class="wheat-big" src="src/wheatbig.png" alt="Big Wheat" />
+    <!-- Parallax 1 Forest -->
+    <div class="parallax1" data-parallax="scroll" data-z-index="1" data-image-src="src/parallax1.jpg"></div>
+    <!-- Offer -->
+    <section class="oferta">
+
+    </section>
+
+
+    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');</script>
 </body>
 
 </html>

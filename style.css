@@ -55,15 +55,23 @@ nav{
     padding-right: 6px;
 }
 .about {
-    position: relative;
     display: flex;
     margin: auto;
     min-height: 80vh;
     align-items: center;
+    position: relative;
 }
+.weather { 
+    height: 10vh;
+    margin: auto;
+}
+.weatherwidget-io {
+    width: 350px;
+    float: right;
+}
+
 .introduction {
-    margin-left: 100px;
-    flex: 1;  
+    margin-left: 100px;  
 }
 .intro-text h1 {
     font-size: 44px;
@@ -83,7 +91,7 @@ nav{
 }
 .cta-read{
     border: 2px solid #525A6E;
-    background: transparent;
+    background-color: white;
     color: black;
     width: 89px;
     height: 34px;
@@ -114,6 +122,10 @@ nav{
     opacity: 0.5;
     top: 100px;
     left: 80px;
+}
+.parallax1 {
+    min-height: 10vh;
+    background: transparent;
 }
 @media screen and (max-width: 1110px){
     html,body {
