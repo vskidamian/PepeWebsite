@@ -107,9 +107,10 @@ nav{
   }
 .cover {
     flex: 1;
+    height: 80vh;
 }
 .cover img {
-    height: 80vh;
+    height: 100%;
 }
 .wheat {
     position: absolute;
@@ -142,11 +143,14 @@ nav{
 .foodpics {
     flex: 1;
     margin-left: 50px;
+    height: 80vh;
 }
 .foodfront {
     filter: drop-shadow(0px 3px 3px black);
+    height: 100%;
 }
 .foodbehind {
+    height: 100%;
     filter: drop-shadow(3px 3px 3px black);
     z-index: -1;
     top: 15%;
@@ -156,7 +160,7 @@ nav{
 }
 .dietaintro {
     margin-left: 500px;
-    flex: 3;    
+    flex: 2;    
 }
 .dieta-text h1 {
     font-size: 44px;
@@ -189,24 +193,24 @@ nav{
     z-index: -3;
     opacity: 0.3;
 }
-@media screen and (max-width: 1110px){
+@media screen and (max-width: 1450px){
     html,body {
         max-width: 100%;
         overflow-x: hidden;
     } 
     nav{
-        flex: 6;
+        flex: 3;
     }
     .about {
-        flex-direction: column;
-    }
-    .wheat {
-        display: none;
+        display: flex;
+        margin: auto;
+        min-height: 80vh;
+        align-items: center;
+        position: relative;
     }
     .cover img {
         height: 80%;
-        width: 80%;
-        margin-left: 75px;
+        margin-top: 50px;
     }
     .introduction{
         margin-top: 40px;
@@ -228,9 +232,48 @@ nav{
     .cta-read{
         margin-left: 100px;
     }
-    .phone{
+    .wheat-big {
         position: absolute;
-        top: 100px;
-        right: 20px;
+        z-index: -1;
+        opacity: 0.3;
+        top: 5px;
+        left: 80px;
+        height: 80%;
+    }
+    .parallax1 {
+        height: 200px;
+    }
+    .oferta {
+        display: flex;
+        margin: auto;
+        min-height: 100vh;
+        align-items: center;
+        position: relative;
+    }
+    .foodpics {
+        margin-top: 200px;
+    }
+    .foodfront img{
+        height: 60%;
+    }
+    .foodbehind img{
+        height: 45%;
+    }
+    .dietaintro {
+        margin-left: 300px;
+        margin-top: 40px;
+        position: relative;
+    } 
+    .dieta-text p{
+        margin-top: 9px;
+        font-size: 16px;
+        color: #525A6E;
+    }
+    .veganfood {
+        height: 50%;
+    }
+    .carrot {
+        height: 40%;
+        bottom: 10%;
     }
 }
