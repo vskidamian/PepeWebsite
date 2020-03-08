@@ -367,9 +367,9 @@ nav{
         position: absolute;
         z-index: -1;
         opacity: 0.3;
-        height: 40%;
-        left: 20px;
-        top: -1%;
+        height: 30%;
+        right: 0%;
+        top: 1%;
     }
     .introduction {
         margin-top: 5vh;
@@ -391,13 +391,13 @@ nav{
         margin: auto;
     }
     .about img{
-        height: 60%;
+        height: 45vh;
     }
     .weather { 
         display: none;
     }
     .parallax1 {
-        margin-top: 260px;
+        margin-top: 135px;
         height: 100px;
     }
     .oferta {
