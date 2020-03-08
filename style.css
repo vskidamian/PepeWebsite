@@ -368,7 +368,8 @@ nav{
         z-index: -1;
         opacity: 0.3;
         height: 40%;
-        left: 20px
+        left: 20px;
+        top: -1%;
     }
     .introduction {
         margin-top: 5vh;
@@ -390,14 +391,14 @@ nav{
         margin: auto;
     }
     .about img{
-        height: 50%;
+        height: 60%;
     }
     .weather { 
         display: none;
     }
     .parallax1 {
-        margin-top: 150px;
-        height: 150px;
+        margin-top: 260px;
+        height: 100px;
     }
     .oferta {
         height: 50vh;
@@ -419,7 +420,7 @@ nav{
     }
     .dietaintro {
         height: 50vh;
-        margin-top: 5vh;
+        margin-top: 0px;
         margin-left: 0px;
         text-align: center;
     } 
