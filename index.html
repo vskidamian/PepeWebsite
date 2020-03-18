@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/03c9d74043.js" crossorigin="anonymous"></script>
     <script src="parallax.min.js"></script>
     <title>Radawa Cholewa Agroturystyka</title>
 </head>
@@ -83,8 +84,23 @@
         <img class="veganfood" src="./src/veganbehind.png" alt="Vegan Food" />
         <img class="carrot" src="./src/carrot.png" alt="Carrot" />
     </section>
+    <!-- Gallery -->
+    <section class="galeria">
+        <div class="carousel-container">
+            <i class="fas fa-arrow-left" id="prevBtn"></i>
+            <i class="fas fa-arrow-right" id="nextBtn"></i>
+            <div class="carousel-slide">
+                <img src="src/galerry/4.jpg" id="lastClone">
+                <img src="./src/galerry/1.jpg" alt="1">
+                <img src="./src/galerry/2.jpg" alt="2">
+                <img src="./src/galerry/3.jpg" alt="3">
+                <img src="./src/galerry/4.jpg" alt="4">
+                <img src="./src/galerry/1.jpg" id="firstClone">
+            </div>
+        </div>
+    </section>
 
-
+    <script src="gallery.js"></script>
     <script src="app.js"></script>
     <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');</script>
 </body>
