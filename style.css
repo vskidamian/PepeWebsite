@@ -130,11 +130,18 @@ nav{
     position: absolute;
     z-index: -1;
     opacity: 0.3;
-    top: 100px;
-    left: 80px;
+    top: 60px;
+    left: 250px;
+    height: 95%;
 }
 .parallax1 {
     background: url('./src/parallax1.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+}
+.parallax2 {
+    background: url('./src/parallax2.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 300px;
@@ -200,55 +207,60 @@ nav{
     z-index: -3;
     opacity: 0.3;
 }
-.galeria{
-    display: flex;
-    margin: auto;
-    min-height: 80vh;
-    align-items: center;
-}
-.carousel-container {
-    width: 40%;
-    margin: auto;
-    overflow: hidden;
-    border: 5px solid black;
+.galeria {
+    width: 100%;
+    padding: 60px 0;
     position: relative;
+
 }
-.carousel-slide {
+.sleepback {
+    position: absolute;
+    opacity: 0.3;
+    z-index: -3;
+    left: 0%;
+    top: 0%;
+}
+.photosback {
+    display: none;
+}
+.galeria h1 {
+    text-align: center;
+    color: black;
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, black, #525A6E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.border {
+    width: 1100px;
+    height: 4px;
+    background: linear-gradient(to right, black, #525A6E);
+    margin: 60px auto;
+}
+.gallery {
     display: flex;
-    width: 100%;
-    height: 500px;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
 }
-
-.fas.fa-arrow-left {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    left: 5%;
-    font-size: 28px;
-    color: white;
-    opacity: 0.7;
+.image {
+    flex: 50%;
+    overflow: hidden;
     cursor: pointer;
 }
-.fas.fa-arrow-left:hover {
-    opacity: 1;
-  }
-
-.fas.fa-arrow-right {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    right: 5%;
-    font-size: 28px;
-    color: white;
-    opacity: 0.7;
-    cursor: pointer;
-}
-.fas.fa-arrow-right:hover {
-    opacity: 1;
-  }
-.carousel-slide img {
+.image img{
+    height: 100%;
     width: 100%;
-    height: 500px;
+    transition: 0.4s;
+}
+.image:hover img{
+    transform: scale(1.4) rotate(15deg);
+}
+.inner-width {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
 }
 
 @media screen and (max-width: 1450px){
@@ -299,6 +311,9 @@ nav{
         height: 80%;
     }
     .parallax1 {
+        height: 200px;
+    }
+    .parallax2 {
         height: 200px;
     }
     .oferta {
@@ -450,30 +465,36 @@ nav{
         display: none;
     }
     .parallax1 {
-        margin-top: 135px;
-        height: 100px;
+        display: none;
+    }
+    .parallax2 {
+        display: none;
     }
     .oferta {
-        height: 50vh;
+        padding: 60px 0;
+        height: 100vh;
         flex-direction: column;
         position: relative;
+        display: flex;
+        flex-flow: column;
     }
     .foodpics {
-        margin: auto;
-        margin-top: 50px;
-    }
-    .foodfront {
+
         height: 50vh;
+        order: 2;
+        margin: auto;
     }
     .foodfront img {
-        height: 80%;
+        margin-top: 50px;
+        height: 65%;
     }
     .foodbehind img {
         display: none;
     }
     .dietaintro {
+        order: 1;
         height: 50vh;
-        margin-top: 0px;
+        padding-top: 40px;
         margin-left: 0px;
         text-align: center;
     } 
@@ -487,12 +508,26 @@ nav{
         margin: 10px 5px 5px 5px;
     }
     .veganfood {
-        top: 50%;
+        top: 10%;
         left: 0%;
         height: 30%;
     }
     .carrot {
-        top: 70%;
+        transform: rotate(90deg);
+        height: 25%;
+        top: 30%;
         left: 50%;
     }
+    .image {
+        flex: 33.33%;
+    }
+    .border {
+        width: 100px;
+    }
+    .galeria h1 {
+        font-size: 28px;
+    }
+    .galeria {
+        padding: 30px 0;
+
 }
