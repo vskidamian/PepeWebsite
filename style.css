@@ -529,5 +529,11 @@ nav{
     }
     .galeria {
         padding: 30px 0;
+    }
+    .sleepback {
+        height: 50%;
+        top: -5%;
+        left: -10%;
+    }
 
 }
