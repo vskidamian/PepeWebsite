@@ -302,7 +302,6 @@ nav{
     padding: 0 20px;
 }
 .card {
-    flex-wrap:wrap;
     width: 100%;
     text-align: center;
     align-items: center;
